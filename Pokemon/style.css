@@ -1,0 +1,19 @@
+#tab
+{
+	display: flex;
+	flex-direction: row;
+
+}
+img
+{
+	height: 342px;
+	width: 245px;
+}
+table
+{
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+}

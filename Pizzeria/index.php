@@ -31,7 +31,6 @@ echo '<tr><td>' . $value->designation . '</td><td>' ;
 
 }
 
-
 echo '</table>'
 
  ?>
