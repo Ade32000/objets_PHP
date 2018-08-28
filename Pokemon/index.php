@@ -7,8 +7,6 @@
 </head>
 <body>
 
-
-
 <?php 
 
 ini_set('display_errors', 1);
@@ -18,43 +16,32 @@ require 'Marisson.class.php';
 require 'Grenousse.class.php';
 require 'Feunnec.class.php';
 
-echo "Hello";
+$Marisson = new Marisson(1);
+$Feunnec = new Feunnec(1);
+$Grenousse = new Grenousse(1);
 
-$Marisson = new Marisson();
-$Feunnec = new Feunnec();
-$Grenousse = new Grenousse();
-
-$Marisson-> getParams();
-$Feunnec-> getParams();
-$Grenousse-> getParams();
-
-
-
-$tableau = [$Marisson, $Feunnec, $Grenousse];
-
-
-echo "<h3>Liste des cartes disponibles</h3>";
+echo "<h1>POKEMON</h1>";
+echo "<h3>Cartes disponibles</h3>";
 echo "<div id='tab'>";
 
-foreach ($tableau as $key => $value) 
-{
-	
-	echo "<table><tr><td>". $value->carte. "</td></tr>". 
-		"<tr><td>". $value->type. "</td></tr>". 
-		"<tr><td>". $value->nom. "</td></tr>". 
-		"<tr><td>". $value->pv. "</td></tr>". 
-		"<tr><td>". $value->attaque1. "</td></tr>". 
-		"<tr><td>". $value->attaque2. "</td></tr>". 
-		"<tr><td>". $value->intensite_attaque1. "</td></tr>". 
-		"<tr><td>". $value->intensite_attaque2. "</td></tr>". 
-		"<tr><td>". $value->faiblesse. "</td></tr>". 
-		"<tr><td>". $value->retraite. "</td></tr></table>";
-}
+$Marisson-> Display();
+$Feunnec-> Display();
+$Grenousse-> Display();
 
-echo "</div>";
+
+
+echo "</div>"
+
 
  ?>
 
+ 	<script type="text/javascript" src="jquery.min.js"></script>
 
+<script>
+
+	
+
+</script>
+ 
 </body>
 </html>
